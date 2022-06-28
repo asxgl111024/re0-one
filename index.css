@@ -1,0 +1,236 @@
+/* 首页 */
+.inner_c{
+    width: 1200px;
+    /*  height: 1072px; */
+    margin: 0 auto;
+}
+/* 默认样式 */
+a{
+    text-decoration:none;
+    /* color: inherit; */
+}
+/* header部分 */
+.header{
+    height: 68px;
+    width: 100%;
+    text-align: center;
+    line-height: 68px; 
+    border-bottom: 1px solid rgba(0,0,0,0.1)
+    /* background-color: blue; */
+}
+.header_c{
+    height: 68px;
+    /* position: relative; */
+    /* background: pink; */
+}
+.header .header_c h1{
+    height: 68px;
+    width: 88px;
+    /* background:orange; */
+    list-style: none;
+    line-height: 68px;
+    float: left;
+}
+.header .header_c h1 a{
+    display: block;
+    text-indent: -20em;
+    overflow:hidden;
+   background: url(../images/xiao_sleep.png) no-repeat center center;
+   padding: 0 10px;
+   /* 首页部分的图标 */
+}
+/* 查看所有类别 */
+.header .header_c .all_pro a{
+    width: 168px;
+    /* background-color: pink; */
+    /* margin: 0 10px; */
+    line-height: 68px;
+    text-align: center;
+    float: left;
+}
+.header .header_c .all_pro{
+    position: relative;
+    list-style: none;
+}
+.header .header_c .all_pro a:hover{
+    background: rgba(0,0,0,0.1);
+}
+.header .header_c .all_pro .product{
+    width: 168px;
+    height: 270px;
+    /* background:pink; */
+    position: absolute;
+    left: 88px;
+    top: 68px;
+    display: none;
+}
+.header .header_c .all_pro:hover .product{
+    display: block;
+}
+/* 查看所有类别 */
+/* 学习 */
+.header .header_c .all_pro1 a{
+    width: 168px;
+    /* background-color: pink; */
+    /* margin: 0 10px; */
+    line-height: 68px;
+    text-align: center;
+    float: left;
+}
+.header .header_c .all_pro1{
+    position: relative;
+    list-style: none;
+}
+.header .header_c .all_pro1 a:hover{
+    background: rgba(0,0,0,0.1);
+}
+.header .header_c .all_pro1 .product1{
+    width: 168px;
+    height: 270px;
+    /* background:pink; */
+    position: absolute;
+    left: 256px;
+    top: 68px;
+    display: none;
+}
+.header .header_c .all_pro1:hover .product1{
+    display: block;
+}
+/* 学习 */
+/* 工作 */
+.header .header_c .all_pro2 a{
+    width: 168px;
+    /* background-color: pink; */
+    /* margin: 0 10px; */
+    line-height: 68px;
+    text-align: center;
+    float: left;
+}
+.header .header_c .all_pro2{
+    position: relative;
+    list-style: none;
+}
+.header .header_c .all_pro2 a:hover{
+    background: rgba(0,0,0,0.1);
+}
+.header .header_c .all_pro2 .product2{
+    width: 168px;
+    height: 270px;
+    /* background:pink; */
+    position: absolute;
+    left: 424px;
+    top: 68px;
+    display: none;
+}
+.header .header_c .all_pro2:hover .product2{
+    display: block;
+}
+/* 工作 */
+/* 生活 */
+.header .header_c .all_pro3 a{
+    width: 168px;
+    /* background-color: pink; */
+    /* margin: 0 10px; */
+    line-height: 68px;
+    text-align: center;
+    float: left;
+}
+.header .header_c .all_pro3{
+    position: relative;
+    list-style: none;
+}
+.header .header_c .all_pro3 a:hover{
+    background: rgba(0,0,0,0.1);
+}
+.header .header_c .all_pro3 .product3{
+    width: 168px;
+    height: 270px;
+    background:pink;
+    position: absolute;
+    left: 592px;
+    top: 68px;
+    display: none;
+}
+.header .header_c .all_pro3:hover .product3{
+    display: block;
+}
+/* 生活 */
+/* 往期 */
+.header .header_c .all_pro4 a{
+    width: 168px;
+    /* background-color: pink; */
+    /* margin: 0 10px; */
+    line-height: 68px;
+    text-align: center;
+    float: left;
+}
+.header .header_c .all_pro4 a:hover{
+    background: rgba(0,0,0,0.1);
+}
+.header .header_c .search{
+    width: 154px;
+    height: 68px;
+    background: url(../images/qq_8.png) no-repeat center center;
+    float: left;
+}
+.banner li a{
+    width:980px;
+    height: 700px;
+    margin: 10px;
+}
+/* 轮播图 */
+.outer{
+    width: 800px;
+    height: 450px;
+    border: 3px solid #ccc;
+    margin: 75px auto;
+    position: relative;
+}
+.outer ul li{
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top:0;
+    display: none;
+}
+.outer ul li.current{
+    display: block;
+}
+.outer .btus a{
+    text-decoration:none;
+    position: absolute;
+    color: #fff;
+    font:50px serif;
+    top: 50%;
+    background-color: rgba(225,225,225,0.2);
+    width: 40px;
+    height: 80px;
+    text-align:center;
+    line-height: 80px;
+    margin-top: -40px;
+}
+.outer .btus a.right{
+    right: 0;
+}
+.outer .circle{
+    width: 90px;
+    height: 20px;
+    background:rgba(225,225,225,0.2) ;
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    left: 50%;
+    margin-left: 180px;
+    border-radius: 10px;
+}
+.outer .circle ol li{
+    width: 15px;
+    height: 15px;
+    float: left;
+    background:rgba(250, 249, 249, 0.8);
+    border-radius: 50%;
+    margin: 2.2px 7.5px;
+    line-height: 20px;
+    text-align: center;
+}
+/* 轮播图结束 */
