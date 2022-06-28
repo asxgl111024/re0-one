@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="index.css" />
+    <!-- <script src="js/jquery-3.6.0.js" type="text/javascript"></script> -->
+  </head>
+  <body>
+    <!-- header开始 -->
+    <div class="header">
+      <div class="header_c inner_c">
+        <h1><a href="#">天青石</a></h1>
+        <div class="all_pro">
+          <p><a href="#">年份</a></p>
+          <div class="product">
+            <li><a href="#">本科阶段</a></li>
+            <li><a href="#">工作三年内</a></li>
+            <li><a href="#">工作五年内</a></li>
+            <li><a href="#">工作七年内</a></li>
+          </div>
+        </div>
+        <div class="all_pro1">
+          <a href="#">学习</a>
+          <div class="product1">
+            <li><a href="#">计算机</a></li>
+            <li><a href="#">英语日语</a></li>
+            <li><a href="#">画画</a></li>
+            <li><a href="#">唱歌跳舞</a></li>
+          </div>
+        </div>
+        <div class="all_pro2">
+          <a href="#">工作</a>
+          <div class="product2">
+            <li><a href="#">前端</a></li>
+            <li><a href="#">后端</a></li>
+            <li><a href="#">产品</a></li>
+            <li><a href="#">UI</a></li>
+          </div>
+        </div>
+        <div class="all_pro3">
+          <a href="#">生活</a>
+          <div class="product3">
+            <li><a href="#">已拥有</a></li>
+            <li><a href="#">愿望清单</a></li>
+            <li><a href="#">资产总结汇报</a></li>
+            <li><a href="#">断舍离</a></li>
+          </div>
+        </div>
+        <div class="all_pro4">
+          <a href="#">往期</a>
+        </div>
+        <div class="search"></div>
+      </div>
+    </div>
+    <!-- banner部分 -->
+    <div class="banner">
+      <!-- <li>
+        <a href=""><img src="images/banner.png" alt="" /></a>
+      </li> -->
+    </div>
+    <!-- banner部分结束 -->
+    <!-- 轮播图 -->
+    <!--    <div class="outer">
+        <ul>
+            <li class="current"><img src="images/)J~LLWGGHT7)SM$WG)TVH47.png" alt=""></li>
+            <li><img src="images/`7$3)~5JW0@K5{8(91$__KU.png" alt=""></li>
+            <li><img src="images/GMU]2L3BU@9BEKV_ECEI3DA.png" alt=""></li>
+            <li><img src="images/微信图片_20210127114101.png" alt=""></li>
+            <li><img src="images/微信图片_20210626184544.png" alt=""></li>
+        </ul>
+        <div class="btus">
+            <button class="lbtn">&lt;</button>
+            <button class="rbtn">&gt;</button>
+        </div>
+        <div class="circle">
+            <ol>
+                <li class="show"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+        </div>
+    </div> -->
+    <!-- 轮播图 -->
+    <!-- <div>查看所有类别<span></span></div> -->
+    <!-- header结束 -->
+  </body>
+</html>
+<script type="text/javascript">
+  $(function () {
+    alert(1);
+  });
+  信号量;
+  var idx = 0;
+  $("lbtn").click(function () {
+    $("ul li:eq(" + idx + ")")
+      .css({ left: 0 })
+      .stop(true)
+      .animate({ left: -600 }, 300);
+    //信号量累加
+    idx++;
+    idx = idx > 4 ? 0 : idx;
+    下一张图显示;
+    $("ul li:eq(" + idx + ")")
+      .css({ left: 600 })
+      .stop(true)
+      .animate({ left: 0 }, 300);
+    小球类名切换;
+    $("ol li:eq(" + idx + ")")
+      .addClass("show")
+      .siblings()
+      .removeClass("show");
+  });
+  右侧按钮的单击事件;
+  $("lbtn").click(function () {
+    当前显示的这张图;
+    $("ul li:eq(" + idx + ")")
+      .css({ left: 0 })
+      .stop(true)
+      .animate({ left: -600 }, 500);
+  });
+  idx--;
+  idx = idx < 0 ? 4 : idx;
+  $("ul li:eq(" + idx + ")")
+    .css({ left: -600 })
+    .stop(true)
+    .animate({ left: 0 }, 300);
+  小球类名切换;
+  $("ol li:eq(" + idx + ")")
+    .addClass("show")
+    .siblings()
+    .removeClass("show");
+  let lbtn = document.querySelector(".lbtn");
+  let rbtn = document.querySelector(".rbtn");
+  let circle = document.querySelectorAll(".circle");
+
+  // let index = 0
+  // let time
+  // function position(){
+  //     images.style.left=(index * -100)+"%"
+  // }
+  // function add(){
+  //     if(index>1){
+  //         index = circle.length-1
+  //         index = 0
+  //     }else{
+  //         index++
+  //     }
+  // }
+  // function desc(){
+  //     if(index>1){
+  //         index = circle.length-1
+  //     }else{
+  //         index--
+  //     }
+  // }
+  // function timer(){
+  //     time =setInterval(()=>{
+  //         index++
+  //         desc()
+  //         add()
+  //         position()
+  //     },3000)
+  // }
+  // left.addEventListener('click',()=>{
+  //     desc()
+  //     position()
+  //     clearInterval(time)
+  //     timer()
+  // })
+  // right.addEventListener('click',()=>{
+  //     desc()
+  //     position()
+  //     clearInterval(time)
+  //     timer()
+  // })
+  // for(let i = 0;i<circle.lengtn;i++){
+  //     circle[i].addEventListener('cilck',()=>{
+  //         index = i
+  //         position()
+  //         clearInterval(time)
+  //         timer()
+  //     })
+  // }
+  // timer()
+</script>
